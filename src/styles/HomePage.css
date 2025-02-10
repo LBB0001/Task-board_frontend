@@ -1,0 +1,151 @@
+.home-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto; /* Horizontally center the container */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
+
+/* .home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f8ff;
+  padding: 20px;
+} */
+
+.board-input, .task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.boards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.board {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  min-height: 200px;
+  text-align: center;
+}
+
+.tasks-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task {
+  background-color: #e3f2fd;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: grab;
+  text-align: center;
+  border: 1px solid #007bff;
+}
+
+.task:active {
+  cursor: grabbing;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  text-decoration: none;  /* Remove underline */
+  color: black;           /* Change default blue to black */
+  font-weight: bold;       /* Make text bold */
+}
+
+.nav-item:hover {
+  color: #007bff;         /* Change color on hover */
+}
+
+.header {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #f0f8ff; /* Light Blue */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  gap: 20px; /* Space between icons */
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 20px; /* Adjust icon size */
+}
+
+.header a:hover {
+  color: #007bff; /* Light Blue Hover Effect */
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out text and buttons */
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.task span {
+  flex-grow: 1; /* Allow task text to take available space */
+  margin-right: 10px;
+}
+
+.task button {
+  margin-left: 5px;
+  padding: 4px 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.task button:hover {
+  background-color: #0056b3;
+}
